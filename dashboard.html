@@ -9,9 +9,9 @@
 </head>
 <body>
 
-  <!-- Background Decorative Glowing Orbs -->
-  <div class="bg-glow-top" aria-hidden="true"></div>
-  <div class="bg-glow-bottom" aria-hidden="true"></div>
+  <!-- Background Ambient Mesh Glows -->
+  <div class="bg-mesh-glow-1" aria-hidden="true"></div>
+  <div class="bg-mesh-glow-2" aria-hidden="true"></div>
 
   <!-- =========================================================================
        4. HEADER / NAVIGATION BAR
@@ -49,7 +49,7 @@
         </div>
         
         <button type="button" class="btn btn-danger btn-logout" aria-label="Log out of dashboard">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
             <polyline points="16 17 21 12 16 7"/>
             <line x1="21" y1="12" x2="9" y2="12"/>
@@ -95,19 +95,20 @@
          ======================================================================= -->
     <section id="home" class="hero-section">
       <div class="container">
+        
         <div class="hero-grid">
           
           <!-- Left Column -->
           <div class="hero-content">
             <div class="section-badge">
               <span class="badge-dot" aria-hidden="true"></span>
-              <span>Verified Session Active</span>
+              <span>Live Command Center</span>
             </div>
             
             <h1 class="hero-title">Welcome to Your <span>Dashboard</span></h1>
             
             <p class="hero-description">
-              Access real-time telemetry, manage platform resources, and streamline organizational workflows with our unified responsive command center. Built purely with modern web standards for maximum velocity.
+              Streamline enterprise oversight and monitor real-time platform infrastructure with our luminous bento-grid interface. Engineered purely with modern HTML5, CSS3, and Vanilla JavaScript.
             </p>
 
             <div class="hero-cta-group">
@@ -120,31 +121,31 @@
               </a>
 
               <a href="#about" class="btn btn-secondary">
-                <span>Learn More</span>
+                <span>Platform Details</span>
               </a>
             </div>
           </div>
 
-          <!-- Right Column: Modern CSS Visual Element (No External Assets) -->
+          <!-- Right Column: Bento Command Center Mockup (Pure HTML & CSS) -->
           <div class="hero-visual">
             
             <!-- Floating Decorative KPI Badge 1 -->
             <div class="floating-badge floating-badge-1" aria-hidden="true">
               <div class="badge-icon-wrap">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"/>
                 </svg>
               </div>
               <div>
                 <div class="badge-text-primary">System 99.98%</div>
-                <div class="badge-text-sub">Healthy & Online</div>
+                <div class="badge-text-sub">Healthy &amp; Online</div>
               </div>
             </div>
 
             <!-- Floating Decorative KPI Badge 2 -->
             <div class="floating-badge floating-badge-2" aria-hidden="true">
               <div class="badge-icon-wrap badge-icon-purple">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
                 </svg>
               </div>
@@ -154,70 +155,74 @@
               </div>
             </div>
 
-            <!-- Central Glassmorphic Dashboard Window -->
-            <div class="visual-board">
+            <!-- Central Bento Glass Console -->
+            <div class="bento-console">
               
-              <div class="visual-header">
+              <div class="console-header">
                 <div class="window-dots" aria-hidden="true">
                   <span class="window-dot dot-red"></span>
                   <span class="window-dot dot-yellow"></span>
                   <span class="window-dot dot-green"></span>
                 </div>
-                <div class="visual-header-title">Live System Overview</div>
+                <div class="console-title">Live Telemetry Overview</div>
+                <div class="console-live-pill">
+                  <span class="console-live-dot"></span>
+                  <span>ACTIVE</span>
+                </div>
               </div>
 
-              <!-- Live KPI Stats Grid -->
-              <div class="visual-stats-grid">
-                <div class="visual-stat-card">
-                  <div class="stat-label">Active Users</div>
-                  <div class="stat-value">
+              <!-- Stats Grid -->
+              <div class="console-stats-grid">
+                <div class="console-stat-box">
+                  <div class="stat-box-label">Active Users</div>
+                  <div class="stat-box-num">
                     <span>1,842</span>
-                    <span class="stat-trend">+14.2%</span>
+                    <span class="stat-box-trend">+14.2%</span>
                   </div>
                 </div>
 
-                <div class="visual-stat-card">
-                  <div class="stat-label">Avg Response</div>
-                  <div class="stat-value">
+                <div class="console-stat-box">
+                  <div class="stat-box-label">Avg Latency</div>
+                  <div class="stat-box-num">
                     <span>42ms</span>
-                    <span class="stat-trend">Optimal</span>
+                    <span class="stat-box-trend">Optimal</span>
                   </div>
                 </div>
               </div>
 
-              <!-- Graphic Visualizer Chart Bars -->
-              <div class="visual-chart-box">
+              <!-- Bar Chart Activity Visualizer -->
+              <div class="console-chart-container">
                 <div class="chart-header">
                   <span class="chart-title">Weekly Throughput Activity</span>
                   <span class="section-badge" style="margin-bottom:0; font-size:0.7rem; padding: 2px 8px;">Real-Time</span>
                 </div>
                 <div class="chart-bars" aria-label="Activity throughput bar graph">
                   <div class="chart-bar-wrap">
-                    <div class="chart-bar-fill" style="height: 45%;"></div>
+                    <div class="chart-bar-fill" style="height: 40%;"></div>
                     <span class="chart-bar-label">Mon</span>
                   </div>
                   <div class="chart-bar-wrap">
-                    <div class="chart-bar-fill" style="height: 65%;"></div>
+                    <div class="chart-bar-fill" style="height: 60%;"></div>
                     <span class="chart-bar-label">Tue</span>
                   </div>
                   <div class="chart-bar-wrap">
-                    <div class="chart-bar-fill" style="height: 55%;"></div>
+                    <div class="chart-bar-fill" style="height: 52%;"></div>
                     <span class="chart-bar-label">Wed</span>
                   </div>
                   <div class="chart-bar-wrap">
-                    <div class="chart-bar-fill" style="height: 85%;"></div>
+                    <div class="chart-bar-fill" style="height: 82%;"></div>
                     <span class="chart-bar-label">Thu</span>
                   </div>
                   <div class="chart-bar-wrap">
-                    <div class="chart-bar-fill active" style="height: 98%;"></div>
+                    <div class="chart-bar-fill active" style="height: 96%;"></div>
                     <span class="chart-bar-label">Fri</span>
                   </div>
                   <div class="chart-bar-wrap">
-                    <div class="chart-bar-fill" style="height: 72%;"></div>
+                    <div class="chart-bar-fill" style="height: 70%;"></div>
                     <span class="chart-bar-label">Sat</span>
                   </div>
                   <div class="chart-bar-wrap">
-                    <div class="chart-bar-fill" style="height: 60%;"></div>
+                    <div class="chart-bar-fill" style="height: 58%;"></div>
                     <span class="chart-bar-label">Sun</span>
                   </div>
                 </div>
@@ -227,6 +232,63 @@
           </div>
 
         </div>
+
+        <!-- Horizontal 4-Metric Summary Strip -->
+        <div class="hero-kpi-strip">
+          <div class="kpi-strip-item">
+            <div class="kpi-icon-circle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <div class="kpi-strip-val">1,842</div>
+              <div class="kpi-strip-label">Active Sessions</div>
+            </div>
+          </div>
+
+          <div class="kpi-strip-item">
+            <div class="kpi-icon-circle" style="background: var(--secondary-soft); color: var(--secondary);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <div>
+              <div class="kpi-strip-val">48.2k</div>
+              <div class="kpi-strip-label">Processed Events</div>
+            </div>
+          </div>
+
+          <div class="kpi-strip-item">
+            <div class="kpi-icon-circle" style="background: var(--accent-emerald-soft); color: var(--accent-emerald);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <div>
+              <div class="kpi-strip-val">99.98%</div>
+              <div class="kpi-strip-label">Uptime Reliability</div>
+            </div>
+          </div>
+
+          <div class="kpi-strip-item">
+            <div class="kpi-icon-circle" style="background: var(--accent-purple-soft); color: var(--accent-purple);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <div class="kpi-strip-val">42ms</div>
+              <div class="kpi-strip-label">Average Latency</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -241,7 +303,7 @@
             <span class="badge-dot" aria-hidden="true"></span>
             <span>Platform Core Capabilities</span>
           </div>
-          <h2 class="section-title">Engineered for Performance & Clarity</h2>
+          <h2 class="section-title">Engineered for Performance &amp; Clarity</h2>
           <p class="section-subtitle">
             Our platform provides enterprise-tier architectural efficiency without the baggage of heavy JavaScript libraries or external CSS bloat.
           </p>
@@ -264,7 +326,7 @@
 
           <!-- Feature 2 -->
           <div class="feature-card">
-            <div class="feature-icon-box">
+            <div class="feature-icon-box" style="color: var(--secondary);">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="3" y="3" width="7" height="9"/>
                 <rect x="14" y="3" width="7" height="5"/>
@@ -280,7 +342,7 @@
 
           <!-- Feature 3 -->
           <div class="feature-card">
-            <div class="feature-icon-box">
+            <div class="feature-icon-box" style="color: var(--accent-purple);">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
                 <line x1="8" y1="21" x2="16" y2="21"/>
@@ -295,7 +357,7 @@
 
           <!-- Feature 4 -->
           <div class="feature-card">
-            <div class="feature-icon-box">
+            <div class="feature-icon-box" style="color: var(--accent-emerald);">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
               </svg>
@@ -333,13 +395,16 @@
           <!-- Category 1 -->
           <article class="category-card">
             <div class="category-top">
-              <div class="category-icon-wrap">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  <circle cx="12" cy="11" r="2"/>
-                </svg>
+              <div class="category-header-row">
+                <div class="category-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <circle cx="12" cy="11" r="2"/>
+                  </svg>
+                </div>
+                <span class="category-tag">Security</span>
               </div>
-              <h3 class="category-card-title">Security & Governance</h3>
+              <h3 class="category-card-title">Security &amp; Governance</h3>
               <p class="category-card-desc">
                 Centralized credential management, cryptographic session tracking, and real-time anomaly threat detection audits.
               </p>
@@ -356,14 +421,17 @@
           <!-- Category 2 -->
           <article class="category-card">
             <div class="category-top">
-              <div class="category-icon-wrap">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="18" y1="20" x2="18" y2="10"/>
-                  <line x1="12" y1="20" x2="12" y2="4"/>
-                  <line x1="6" y1="20" x2="6" y2="14"/>
-                </svg>
+              <div class="category-header-row">
+                <div class="category-icon-wrap" style="background: var(--primary-soft); color: var(--primary);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </div>
+                <span class="category-tag">Metrics</span>
               </div>
-              <h3 class="category-card-title">Analytics & Reports</h3>
+              <h3 class="category-card-title">Analytics &amp; Reports</h3>
               <p class="category-card-desc">
                 Granular metric drill-downs, latency distribution histograms, and automated scheduled executive reporting exports.
               </p>
@@ -380,10 +448,13 @@
           <!-- Category 3 -->
           <article class="category-card">
             <div class="category-top">
-              <div class="category-icon-wrap">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
-                </svg>
+              <div class="category-header-row">
+                <div class="category-icon-wrap" style="background: var(--accent-emerald-soft); color: var(--accent-emerald);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                  </svg>
+                </div>
+                <span class="category-tag">Cloud</span>
               </div>
               <h3 class="category-card-title">Cloud Infrastructure</h3>
               <p class="category-card-desc">
@@ -402,13 +473,16 @@
           <!-- Category 4 -->
           <article class="category-card">
             <div class="category-top">
-              <div class="category-icon-wrap">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                </svg>
+              <div class="category-header-row">
+                <div class="category-icon-wrap" style="background: var(--accent-purple-soft); color: var(--accent-purple);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <span class="category-tag">Admin</span>
               </div>
               <h3 class="category-card-title">User Management</h3>
               <p class="category-card-desc">
@@ -427,11 +501,14 @@
           <!-- Category 5 -->
           <article class="category-card">
             <div class="category-top">
-              <div class="category-icon-wrap">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <polyline points="16 18 22 12 16 6"/>
-                  <polyline points="8 6 2 12 8 18"/>
-                </svg>
+              <div class="category-header-row">
+                <div class="category-icon-wrap" style="background: var(--accent-amber-soft, #fef3c7); color: var(--accent-amber);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                </div>
+                <span class="category-tag">Connect</span>
               </div>
               <h3 class="category-card-title">API Integrations</h3>
               <p class="category-card-desc">
@@ -450,10 +527,13 @@
           <!-- Category 6 -->
           <article class="category-card">
             <div class="category-top">
-              <div class="category-icon-wrap">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                </svg>
+              <div class="category-header-row">
+                <div class="category-icon-wrap" style="background: var(--secondary-soft); color: var(--secondary);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                  </svg>
+                </div>
+                <span class="category-tag">Automate</span>
               </div>
               <h3 class="category-card-title">Automation Workflows</h3>
               <p class="category-card-desc">
@@ -495,7 +575,7 @@
           
           <!-- Contact Info Sidebar -->
           <div class="contact-info-card">
-            <h3 class="contact-info-title">Support & Inquiries</h3>
+            <h3 class="contact-info-title">Support &amp; Inquiries</h3>
             <p class="contact-info-desc">
               Our engineering team is on standby 24/7 to support infrastructure requests and authentication system inquiries.
             </p>
@@ -518,7 +598,7 @@
 
               <!-- Phone -->
               <div class="contact-item">
-                <div class="contact-item-icon">
+                <div class="contact-item-icon" style="color: var(--secondary);">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                   </svg>
@@ -531,7 +611,7 @@
 
               <!-- Location -->
               <div class="contact-item">
-                <div class="contact-item-icon">
+                <div class="contact-item-icon" style="color: var(--accent-emerald);">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                     <circle cx="12" cy="10" r="3"/>
@@ -625,7 +705,7 @@
         
         <!-- Brand Summary -->
         <div>
-          <a href="#home" class="header-logo">
+          <a href="#home" class="header-logo" style="margin-bottom:12px;">
             <div class="header-logo-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -633,7 +713,7 @@
                 <path d="M12 13v3"/>
               </svg>
             </div>
-            <div class="header-logo-text">Auth<span>Portal</span></div>
+            <div class="header-logo-text" style="color: #ffffff;">Auth<span>Portal</span></div>
           </a>
           <p class="footer-brand-desc">
             A high-velocity, lightweight user authentication gateway and responsive operations dashboard crafted exclusively with modern HTML5, CSS3, and Vanilla JavaScript.
@@ -654,7 +734,7 @@
         <!-- Social Channels & Connect -->
         <div>
           <div class="footer-col-title">Connect</div>
-          <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:14px;">
+          <p style="font-size:0.88rem; color:#94a3b8; margin-bottom:14px;">
             Follow our open source updates and technical releases.
           </p>
           <div class="footer-social-links" aria-label="Social media links">
@@ -683,7 +763,7 @@
       <!-- Exact Copyright Line -->
       <div class="footer-bottom">
         <div>&copy; 2026 User Auth Dashboard. All Rights Reserved.</div>
-        <div style="font-size:0.82rem; color:var(--text-muted);">Repository: user-auth11092026</div>
+        <div style="font-size:0.82rem; color:#94a3b8;">Repository: user-interface</div>
       </div>
 
     </div>

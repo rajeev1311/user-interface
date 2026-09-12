@@ -9,32 +9,81 @@
 </head>
 <body class="auth-page">
 
-  <!-- Background Decorative Glowing Orbs -->
-  <div class="bg-glow-top" aria-hidden="true"></div>
-  <div class="bg-glow-bottom" aria-hidden="true"></div>
+  <!-- Ambient Background Mesh Glows -->
+  <div class="bg-mesh-glow-1" aria-hidden="true"></div>
+  <div class="bg-mesh-glow-2" aria-hidden="true"></div>
 
-  <main class="auth-wrapper">
-    <div class="auth-card">
-
-      <!-- Brand Header -->
-      <header class="auth-header">
-        <div class="brand-logo">
-          <div class="brand-logo-icon">
-            <!-- Shield Lock SVG Icon -->
+  <main class="auth-split-wrapper">
+    
+    <!-- Left Showcase Column (Brand & Platform Highlight) -->
+    <section class="auth-showcase">
+      <div>
+        <div class="showcase-brand">
+          <div class="showcase-logo-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               <circle cx="12" cy="11" r="2"/>
               <path d="M12 13v3"/>
             </svg>
           </div>
-          <div class="brand-logo-text">Auth<span>Portal</span></div>
+          <div class="showcase-logo-text">Auth<span>Portal</span></div>
         </div>
 
+        <h2 class="showcase-hero-title">Next-Generation Operations &amp; Intelligence</h2>
+        <p class="showcase-hero-desc">
+          Experience unified organizational management, real-time analytics telemetry, and automated role governance in one modern command center.
+        </p>
+
+        <ul class="showcase-benefits">
+          <li class="showcase-benefit-item">
+            <span class="showcase-check-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </span>
+            <span>Zero-bloat pure Vanilla web architecture</span>
+          </li>
+          <li class="showcase-benefit-item">
+            <span class="showcase-check-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </span>
+            <span>Role-governed session authentication</span>
+          </li>
+          <li class="showcase-benefit-item">
+            <span class="showcase-check-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </span>
+            <span>Adaptive bento grid across all devices</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Floating Stat Glass Badge -->
+      <div class="showcase-stat-glass">
+        <div>
+          <div class="stat-metric-bold">99.98% Uptime</div>
+          <div class="stat-metric-sub">Enterprise Telemetry SLA</div>
+        </div>
+        <div class="console-live-pill">
+          <span class="console-live-dot"></span>
+          <span>ONLINE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Authentication Form Column -->
+    <section class="auth-form-side">
+      
+      <header class="auth-form-header">
         <h1 class="auth-title">Welcome Back</h1>
         <p class="auth-subtitle">Sign in to access your dashboard</p>
       </header>
 
-      <!-- Dynamic Alert Box for Errors and Feedback -->
+      <!-- Alert Box -->
       <div id="authAlert" class="auth-alert" role="alert" aria-live="assertive">
         <svg class="auth-alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="10"/>
@@ -44,7 +93,7 @@
         <span id="authAlertText"></span>
       </div>
 
-      <!-- Authentication Form -->
+      <!-- Form -->
       <form id="loginForm" class="auth-form" novalidate autocomplete="off">
         
         <!-- Username Field -->
@@ -67,7 +116,7 @@
           </div>
         </div>
 
-        <!-- Password Field with Show/Hide Toggle -->
+        <!-- Password Field -->
         <div class="form-group">
           <label for="passwordInput" class="form-label">Password</label>
           <div class="input-wrapper">
@@ -90,12 +139,12 @@
               aria-label="Show password" 
               tabindex="0"
             >
-              <!-- Eye Icon (Show) -->
+              <!-- Eye Icon -->
               <svg class="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                 <circle cx="12" cy="12" r="3"/>
               </svg>
-              <!-- Eye Off Icon (Hide) -->
+              <!-- Eye Off Icon -->
               <svg class="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
                 <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
                 <line x1="1" y1="1" x2="23" y2="23"/>
@@ -116,7 +165,7 @@
 
       </form>
 
-      <!-- Demo Credentials Reference -->
+      <!-- Demo Credentials Hint Box with Quick Fill -->
       <footer class="demo-hint-box" aria-label="Demo login details">
         <div class="demo-hint-title">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -127,12 +176,13 @@
           Demo Credentials
         </div>
         <div class="demo-hint-list">
-          <div class="demo-hint-item">User: <code>admin</code></div>
-          <div class="demo-hint-item">Pass: <code>Abc@2026</code></div>
+          <div class="demo-hint-item">Username: <code>admin</code></div>
+          <div class="demo-hint-item">Password: <code>Abc@2026</code></div>
         </div>
       </footer>
 
-    </div>
+    </section>
+
   </main>
 
   <script src="js/script.js"></script>
