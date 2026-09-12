@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | user-auth11092026</title>
+  <meta name="description" content="Professional dashboard portal providing operational analytics, security insights, and system management.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Glowing Orbs -->
+  <div class="bg-glow-top" aria-hidden="true"></div>
+  <div class="bg-glow-bottom" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       4. HEADER / NAVIGATION BAR
+       ========================================================================= -->
+  <header class="dashboard-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="header-logo" aria-label="AuthPortal Home">
+        <div class="header-logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <circle cx="12" cy="11" r="2"/>
+            <path d="M12 13v3"/>
+          </svg>
+        </div>
+        <div class="header-logo-text">Auth<span>Portal</span></div>
+      </a>
+
+      <!-- Desktop Navigation Bar -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">HOME</a></li>
+          <li><a href="#about" class="nav-link">ABOUT US</a></li>
+          <li><a href="#category" class="nav-link">CATEGEORY</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions: User Badge & Logout -->
+      <div class="header-actions">
+        <div class="user-badge" aria-label="Current logged in user">
+          <span class="user-avatar" aria-hidden="true">A</span>
+          <span>admin</span>
+        </div>
+        
+        <button type="button" class="btn btn-danger btn-logout" aria-label="Log out of dashboard">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+            <polyline points="16 17 21 12 16 7"/>
+            <line x1="21" y1="12" x2="9" y2="12"/>
+          </svg>
+          <span>Logout</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button type="button" id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Slide-Down Drawer -->
+    <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link active">HOME</a></li>
+        <li><a href="#about" class="mobile-nav-link">ABOUT US</a></li>
+        <li><a href="#category" class="mobile-nav-link">CATEGEORY</a></li>
+        <li><a href="#contact" class="mobile-nav-link">CONTACT</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <div class="user-badge">
+          <span class="user-avatar">A</span>
+          <span>admin</span>
+        </div>
+        <button type="button" class="btn btn-danger btn-logout">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN DASHBOARD CONTENT
+       ========================================================================= -->
+  <main id="dashboardContent">
+
+    <!-- =======================================================================
+         5. HERO SECTION
+         ======================================================================= -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column -->
+          <div class="hero-content">
+            <div class="section-badge">
+              <span class="badge-dot" aria-hidden="true"></span>
+              <span>Verified Session Active</span>
+            </div>
+            
+            <h1 class="hero-title">Welcome to Your <span>Dashboard</span></h1>
+            
+            <p class="hero-description">
+              Access real-time telemetry, manage platform resources, and streamline organizational workflows with our unified responsive command center. Built purely with modern web standards for maximum velocity.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#category" class="btn btn-primary">
+                <span>Explore Platform</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+
+              <a href="#about" class="btn btn-secondary">
+                <span>Learn More</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Modern CSS Visual Element (No External Assets) -->
+          <div class="hero-visual">
+            
+            <!-- Floating Decorative KPI Badge 1 -->
+            <div class="floating-badge floating-badge-1" aria-hidden="true">
+              <div class="badge-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <div>
+                <div class="badge-text-primary">System 99.98%</div>
+                <div class="badge-text-sub">Healthy & Online</div>
+              </div>
+            </div>
+
+            <!-- Floating Decorative KPI Badge 2 -->
+            <div class="floating-badge floating-badge-2" aria-hidden="true">
+              <div class="badge-icon-wrap badge-icon-purple">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="badge-text-primary">48.2k Events</div>
+                <div class="badge-text-sub">Processed Today</div>
+              </div>
+            </div>
+
+            <!-- Central Glassmorphic Dashboard Window -->
+            <div class="visual-board">
+              
+              <div class="visual-header">
+                <div class="window-dots" aria-hidden="true">
+                  <span class="window-dot dot-red"></span>
+                  <span class="window-dot dot-yellow"></span>
+                  <span class="window-dot dot-green"></span>
+                </div>
+                <div class="visual-header-title">Live System Overview</div>
+              </div>
+
+              <!-- Live KPI Stats Grid -->
+              <div class="visual-stats-grid">
+                <div class="visual-stat-card">
+                  <div class="stat-label">Active Users</div>
+                  <div class="stat-value">
+                    <span>1,842</span>
+                    <span class="stat-trend">+14.2%</span>
+                  </div>
+                </div>
+
+                <div class="visual-stat-card">
+                  <div class="stat-label">Avg Response</div>
+                  <div class="stat-value">
+                    <span>42ms</span>
+                    <span class="stat-trend">Optimal</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Graphic Visualizer Chart Bars -->
+              <div class="visual-chart-box">
+                <div class="chart-header">
+                  <span class="chart-title">Weekly Throughput Activity</span>
+                  <span class="section-badge" style="margin-bottom:0; font-size:0.7rem; padding: 2px 8px;">Real-Time</span>
+                </div>
+                <div class="chart-bars" aria-label="Activity throughput bar graph">
+                  <div class="chart-bar-wrap">
+                    <div class="chart-bar-fill" style="height: 45%;"></div>
+                    <span class="chart-bar-label">Mon</span>
+                  </div>
+                  <div class="chart-bar-wrap">
+                    <div class="chart-bar-fill" style="height: 65%;"></div>
+                    <span class="chart-bar-label">Tue</span>
+                  </div>
+                  <div class="chart-bar-wrap">
+                    <div class="chart-bar-fill" style="height: 55%;"></div>
+                    <span class="chart-bar-label">Wed</span>
+                  </div>
+                  <div class="chart-bar-wrap">
+                    <div class="chart-bar-fill" style="height: 85%;"></div>
+                    <span class="chart-bar-label">Thu</span>
+                  </div>
+                  <div class="chart-bar-wrap">
+                    <div class="chart-bar-fill active" style="height: 98%;"></div>
+                    <span class="chart-bar-label">Fri</span>
+                  </div>
+                  <div class="chart-bar-wrap">
+                    <div class="chart-bar-fill" style="height: 72%;"></div>
+                    <span class="chart-bar-label">Sat</span>
+                  </div>
+                  <div class="chart-bar-wrap">
+                    <div class="chart-bar-fill" style="height: 60%;"></div>
+                    <span class="chart-bar-label">Sun</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. ABOUT US SECTION
+         ======================================================================= -->
+    <section id="about" class="about-section">
+      <div class="container">
+        
+        <div class="text-center">
+          <div class="section-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>Platform Core Capabilities</span>
+          </div>
+          <h2 class="section-title">Engineered for Performance & Clarity</h2>
+          <p class="section-subtitle">
+            Our platform provides enterprise-tier architectural efficiency without the baggage of heavy JavaScript libraries or external CSS bloat.
+          </p>
+        </div>
+
+        <div class="about-features-grid">
+          
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Secure Authentication</h3>
+            <p class="feature-desc">
+              State-governed session authentication with instant route protection, credential evaluation, and client-side access gating.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="9"/>
+                <rect x="14" y="3" width="7" height="5"/>
+                <rect x="14" y="12" width="7" height="9"/>
+                <rect x="3" y="16" width="7" height="5"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Simple Dashboard</h3>
+            <p class="feature-desc">
+              An intuitive visual control center designed for focus, displaying critical KPIs, system health indicators, and operational categories.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Responsive Design</h3>
+            <p class="feature-desc">
+              Pixel-perfect viewport fluid layouts tailored seamlessly across desktop monitors, laptops, tablets, and compact mobile phones.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Fast Performance</h3>
+            <p class="feature-desc">
+              Unthrottled vanilla execution that loads instantly with zero external network blocking scripts, minimal overhead, and silky 60fps animations.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. CATEGEORY SECTION
+         ======================================================================= -->
+    <section id="category" class="category-section">
+      <div class="container">
+        
+        <div class="text-center">
+          <div class="section-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>Module Ecosystem</span>
+          </div>
+          <h2 class="section-title">CATEGEORY</h2>
+          <p class="section-subtitle">
+            Explore dedicated functional categories tailored for high-scale enterprise operations and administrative oversight.
+          </p>
+        </div>
+
+        <div class="category-grid">
+          
+          <!-- Category 1 -->
+          <article class="category-card">
+            <div class="category-top">
+              <div class="category-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <circle cx="12" cy="11" r="2"/>
+                </svg>
+              </div>
+              <h3 class="category-card-title">Security & Governance</h3>
+              <p class="category-card-desc">
+                Centralized credential management, cryptographic session tracking, and real-time anomaly threat detection audits.
+              </p>
+            </div>
+            <a href="#contact" class="category-action">
+              <span>Explore Module</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Category 2 -->
+          <article class="category-card">
+            <div class="category-top">
+              <div class="category-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="18" y1="20" x2="18" y2="10"/>
+                  <line x1="12" y1="20" x2="12" y2="4"/>
+                  <line x1="6" y1="20" x2="6" y2="14"/>
+                </svg>
+              </div>
+              <h3 class="category-card-title">Analytics & Reports</h3>
+              <p class="category-card-desc">
+                Granular metric drill-downs, latency distribution histograms, and automated scheduled executive reporting exports.
+              </p>
+            </div>
+            <a href="#contact" class="category-action">
+              <span>Explore Module</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Category 3 -->
+          <article class="category-card">
+            <div class="category-top">
+              <div class="category-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                </svg>
+              </div>
+              <h3 class="category-card-title">Cloud Infrastructure</h3>
+              <p class="category-card-desc">
+                Multi-region node health status, container lifecycle telemetry, and bandwidth consumption optimization tools.
+              </p>
+            </div>
+            <a href="#contact" class="category-action">
+              <span>Explore Module</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Category 4 -->
+          <article class="category-card">
+            <div class="category-top">
+              <div class="category-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <h3 class="category-card-title">User Management</h3>
+              <p class="category-card-desc">
+                Role-based access control (RBAC), multi-tenant provisioning, administrative privilege tiers, and user lifecycle events.
+              </p>
+            </div>
+            <a href="#contact" class="category-action">
+              <span>Explore Module</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Category 5 -->
+          <article class="category-card">
+            <div class="category-top">
+              <div class="category-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <h3 class="category-card-title">API Integrations</h3>
+              <p class="category-card-desc">
+                REST and webhook dispatch management, token authentication policies, rate limiting, and third-party SaaS interconnects.
+              </p>
+            </div>
+            <a href="#contact" class="category-action">
+              <span>Explore Module</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Category 6 -->
+          <article class="category-card">
+            <div class="category-top">
+              <div class="category-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+              </div>
+              <h3 class="category-card-title">Automation Workflows</h3>
+              <p class="category-card-desc">
+                Event-driven job scheduling, automated pipeline deployments, alert escalation cascades, and self-healing task routines.
+              </p>
+            </div>
+            <a href="#contact" class="category-action">
+              <span>Explore Module</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. CONTACT SECTION
+         ======================================================================= -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        
+        <div class="text-center">
+          <div class="section-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Connect With Our Team</h2>
+          <p class="section-subtitle">
+            Have questions regarding deployment or enterprise tier configurations? Reach out to our technical engineering group.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Sidebar -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Support & Inquiries</h3>
+            <p class="contact-info-desc">
+              Our engineering team is on standby 24/7 to support infrastructure requests and authentication system inquiries.
+            </p>
+
+            <div class="contact-details-list">
+              
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Direct Email</div>
+                  <div class="contact-item-value">support@authportal2026.io</div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Telephone</div>
+                  <div class="contact-item-value">+1 (800) 555-0199</div>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Headquarters</div>
+                  <div class="contact-item-value">750 Innovation Blvd, Tech Corridor, CA</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            
+            <div id="contactFeedback" class="contact-feedback" role="alert" aria-live="polite">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span id="contactFeedbackText"></span>
+            </div>
+
+            <form id="contactForm" novalidate autocomplete="off">
+              
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name</label>
+                <input 
+                  type="text" 
+                  id="contactName" 
+                  class="form-input" 
+                  placeholder="Enter your name" 
+                  required 
+                  aria-required="true"
+                  style="padding-left: 16px;"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Work Email</label>
+                <input 
+                  type="email" 
+                  id="contactEmail" 
+                  class="form-input" 
+                  placeholder="name@company.com" 
+                  required 
+                  aria-required="true"
+                  style="padding-left: 16px;"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Your Message</label>
+                <textarea 
+                  id="contactMessage" 
+                  class="form-textarea" 
+                  placeholder="Tell us about your technical inquiry or platform feedback..." 
+                  required 
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span class="spinner" aria-hidden="true"></span>
+                <span class="btn-text">Submit Message</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       9. FOOTER
+       ========================================================================= -->
+  <footer class="dashboard-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- Brand Summary -->
+        <div>
+          <a href="#home" class="header-logo">
+            <div class="header-logo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <circle cx="12" cy="11" r="2"/>
+                <path d="M12 13v3"/>
+              </svg>
+            </div>
+            <div class="header-logo-text">Auth<span>Portal</span></div>
+          </a>
+          <p class="footer-brand-desc">
+            A high-velocity, lightweight user authentication gateway and responsive operations dashboard crafted exclusively with modern HTML5, CSS3, and Vanilla JavaScript.
+          </p>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#category">CATEGEORY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Channels & Connect -->
+        <div>
+          <div class="footer-col-title">Connect</div>
+          <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:14px;">
+            Follow our open source updates and technical releases.
+          </p>
+          <div class="footer-social-links" aria-label="Social media links">
+            <a href="#home" class="social-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+            <a href="#home" class="social-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="#home" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Exact Copyright Line -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 User Auth Dashboard. All Rights Reserved.</div>
+        <div style="font-size:0.82rem; color:var(--text-muted);">Repository: user-auth11092026</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
